@@ -137,7 +137,7 @@ input.addEventListener("keyup",e=>{
  // no haya ninguna otra ejecucion. Hasta que el stack este totalmente vacio. Por lo que no quiere decir que 
  // lo va a ejecutar a los tantos o cada tanto segundos, tanto settimeout como interval, porque si hay mas sentencias antes
  // puede tardar mas
- for (let index = 0; index < 50000; index++) {
+ for (let index = 0; index < 5/*0000*/; index++) {
    console.log("Hola")
    
  }
@@ -157,3 +157,14 @@ console.log("ConsoleLog")
 // Para verlo. Stack y Web APIs
 
 
+let xhr = new XMLHttpRequest
+
+/**
+ * La propiedad readyState de un objeto XHR nos indica en que estado se encuentra el pedido
+ * 
+ * 0 - Inicializado
+ * 1 - Objeto configurado
+ * 2 - Headers (de peticion y respuesta) fueron enviados y recibidos
+ * 3 - 
+ * 4 - 
+ */
