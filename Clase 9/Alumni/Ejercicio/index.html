@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <button class="material-icons">menu</button>
+        <h1>Mi Pagina</h1>
+        <nav id="drawer">
+            <a href="perfil.html">perfil</a>
+            <a href="portfolio.html">portfolio</a>
+            <a href="contacto.html">contacto</a>
+        </nav>
+    </header>
+    <main>
+        <img id="loader" src="loader.gif" alt="loader">
+    </main>
+    <footer>
+        <p>&copy; Copyright 2018</p>
+    </footer>
+    <script src="funciones.js"></script>
+    <script src="app.js"></script>
+    <script>
+        let imagenes = ["imagen1","imagen2","imagen3","imagen4","imagen5"]
+        
+        /*
+        
+        Basandonos en el modelo de extension de funciones constructoras...
+
+        */
+
+        //1) Implementar un método llamado mapear que esté disponible en cualquier array creado bajo el constructor Array que nos permita retornar un array a partir de otro. Similar al forEach que itera sobre un array , pero con retorno. El mismo deberá tomar como parámetro una función que reciba como parámetros el elemento del array , el índice y todo el array completo y tendrá que retornar una expresión que va a ser el nuevo valor del nuevo array bajo el mismo indice.
+
+        //2) Implementar un método llamado filtrar que esté disponible en cualquier array creado bajo el constructor Array que nos permita filtrar un array en base a sus elementos bajo una condicion determinada. El mismo deberá tomar como parámetro una función que reciba como parámetros el elemento del array y el índice y devolverá true si la condicion se cumple y false de le contrario. Cada valor con return true formará parte del nuevo array.
+
+        //3) Refactorizar los prototipos creados en el laboratorio de la clase anterior para los tipos de usuarios pero usando funciones constructoras
+
+        //BONUS
+
+        //4) Crear un módulo por cada clase en un archivo con el mismo nombre, exponiendo su interfaz en el ámbito global.
+        //5) Validar de manera correcta cada uno de los parametros entrantes como propiedades y métodos dentro de los métodos extends y create.
+        //6) Implementar un método nuevo dentro de la clase Usuario que permita obtener las propiedades de toda una cadena de prototipos de una clase determinada para que sus instancias puedan también tener todas esas propiedades en su interior.
+
+    </script>
+</body>
+</html>

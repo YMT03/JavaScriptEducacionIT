@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <button class="material-icons">menu</button>
+        <h1>Mi Pagina</h1>
+        <nav id="drawer">
+            <a href="perfil.html">perfil</a>
+            <a href="portfolio.html">portfolio</a>
+            <a href="contacto.html">contacto</a>
+        </nav>
+    </header>
+    <main>
+        <img id="loader" src="loader.gif" alt="loader">
+    </main>
+    <footer>
+        <p>&copy; Copyright 2018</p>
+    </footer>
+    <script src="funciones.js"></script>
+    <script src="app.js"></script>
+    <script>
+        let imagenes = ["imagen1","imagen2","imagen3","imagen4","imagen5"]
+        
+        /*
+        
+        Basandonos en el modelo de prototipos de Javascript ...
+        
+        */
+
+       //1) Crear un objeto literal vajo la variable usuario que contenga un método que va a ser compartido por todos los objetos que se creen a partir de esa interfaz
+       //2) Usar el método create del objeto Object para crear dos objetos cuyo prototipo sea un usuario.
+       //3) Crear dos métodos adicionales en el objeto usuario que se llamen crear y extender. Cada función debe retornar una instancia de un objeto nuevo vacio cuyo prototipo sea el contexto de la misma función. 
+       //4) Admitir un parámetro en el método extends llamado metodos que deberá ser un Object conteniendo todos los métodos de un nuevo prorotipo 
+       //5) Admitir un parámetro mas en el método extends llamado propiedades. Este deberá ser un Array y puede contener unicamente String que van a ser el nombre de las propiedades que podemos usar en las instancias que creemos usando este prototipo. 
+       //6) Admitir un parámetro en el método create que sea de tipo Object. El mismo unicamente puede contener los indices con nombres declarados en el punto anterior. Ej.: Si un prototipo lo creamos con let subproto = Prototipo.extends({metodos:{...}},["prop1"]) no puedo hacer subproto.create({"prop2":"test"}) pero si subproto.create({"prop1":"test"}) porque prop1 está definida como propiedad en su prorotipo
+       //BONUS
+       //1)Crear prototipos para usuarios del tipo Admin , Regular y Guest que contengan propiedades como :
+       /*
+
+            -USUARIO :
+                Metodos
+                    -create : De los puntos anteriores pero con los nuevos métodos y propiedades. La propiedad status debe ser False por defecto.
+                    -extends : De los puntos anteriores pero con los nuevos métodos y propiedades
+                    -setInfo : Actualiza la información del usuario solo si es admin
+                    -getInfo : Devuelve la información del usuario 
+                Props
+                    -username : String
+                    -email : String 
+                    -password : String 
+                    -status : Boolean - Determina si está activo o no
+
+            -ADMIN : 
+                Metodos     
+                    -registerUser : Igual a create pero ya le asigna un status True
+                    -activateUser : Le puede activar el status a cualquier usuario.
+                    -removesUser : Le cancela el status a cualquier usuario.
+                Props 
+                    -adminId : Number
+            
+            -REGULAR : 
+                Metodos 
+                    -saludar : Usa su nombre de usuario para mostrar un mensaje por consola 
+                    -updateInfo : Cambia la información valida para un usuario regular como nombre y apellido
+                Props
+                    -nombre : String
+                    -apellido : String
+            -GUEST : 
+                Metodos 
+                    -ninguno : Tiene todos los demás métodos restringidos
+                Props
+                    -guestId : Number
+
+       */
+
+    </script>
+</body>
+</html>
