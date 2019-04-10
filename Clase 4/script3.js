@@ -53,3 +53,7 @@
 
 
 
+//Si empiezo a llamar ademas por usuario sus post y los comentarios de ese post.
+//Se arma el Callback of hell. Complicando el codigo, con diferentes xhr dependiendo del anterior
+//Y ademas de tener que armar las verificaciones de estados etc etc
+//Para eso sirven las promesas
