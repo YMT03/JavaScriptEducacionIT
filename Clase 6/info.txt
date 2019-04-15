@@ -1,0 +1,26 @@
+NODE.js: Entorno de desarrollo que corre JS usando el motor V8 + LIBUV + Node Bidings + C/C++
+
+NPM : Node Package Manager
+
+npm init -y : Inicia un archivo de configuracion que controla versiones de dependencias y genera comandos internos
+npm install/i <tipo> <paquete/s> : Instala un paquete
+
+<tipo>:
+--save/-S : produccion
+--save-dev/-D: desarrollo
+-g: globales de OS
+
+
+npm run <script>: Corre un comando interno.
+
+
+WEBPACK: bundler
+modulos: webpack webpack-cli
+configuracion: webpack.config.js
+
+Por defecto solo lee JS asique si necesitamos leer otros archivos usamos la configuracion plugins del 
+archivo de config. La cual es un array de plugins.
+
+html-webpack-plugin : Crea o usa un HTML de template para incluir nuestra compilacion de JS
+
+BABEL: transpilador. Compila y lo pasa a 'codigo viejo' de JS-
