@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PokedexAPI</title>
+</head>
+<body>
+    <form>
+        <input type="text" id="nombre" placeholder="Nombre del Pokemon">
+        <button>Buscar!</button>
+    </form>    
+    <ul id="lista-pokemon">
+
+    </ul>
+    <!--
+        https://pokeapi.co
+
+        fetch("https://pokeapi.co/api/v2/pokemon/{nombre}")
+        .then(res=>res.json())
+        .then(res=>console.log(res))
+
+        1) Agarrar el formulario
+        2) Asignarle un evento de submit
+        3) Cancelarle el comportamiento por default
+        4) Validar que si un campo esta escrito con por lo menos un caracter, que ese caracter sea alfabético y no contenga numeros ni espacios ni caracteres especiales
+        5) Si el formulario valida, se tiene que hacer un pedido por ajax usando FETCH a la API 
+        6) Si el formulario no valida, se tiene que mostrar un mensaje de error en el DOM
+        7) Con la respuesta de la API se tiene que mostrar una lista desordenada con todas las opciones
+        8) Si se vuelve a buscar , la lista anterior debe borrarse para darle lugar a las nuevas sugerencias
+    -->
+    <script src="proyecto.js"></script>
+</body>
+</html>
